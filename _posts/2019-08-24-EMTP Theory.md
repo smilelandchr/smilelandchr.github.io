@@ -17,7 +17,7 @@ tags:
 
 ## 1. EMTP求解方法
 
-![1566631536028](C:\Users\Administrator\Documents\GitHub\smilelandchr.github.io\_posts\1566631536028.png)
+![1566632371652](C:UsersAdministratorDocumentsGitHubsmilelandchr.github.io_post img\1566632371652-1566632373015.png)
 
 这是一个标准的电力网络，里面有电阻R、电感L、电容C、输电线路以及电流源激励。
 
