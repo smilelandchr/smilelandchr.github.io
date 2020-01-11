@@ -95,9 +95,9 @@ Level 2 MATLAB S-function中设置方法的主体将初始化相应Level-2 MATLA
 
 以下步骤说明了如何编写简单的Level-2 MATLAB S函数。 如果适用，这些步骤包括模型msfcndemo_sfundsc2中使用的S函数示例msfcn_unit_delay.m中的示例。 所有代码行都将变量名称块用于S函数运行时对象。
 
-1. 将Level 2 MATLAB S函数模板msfuntmpl_basic.m复制到您的工作文件夹中。 如果在复制文件时更改了文件名，请将功能行中的功能名更改为相同的名称。
+1  将Level 2 MATLAB S函数模板msfuntmpl_basic.m复制到您的工作文件夹中。 如果在复制文件时更改了文件名，请将功能行中的功能名更改为相同的名称。
 
-2. 修改设置方法以初始化S函数的属性。 对于此示例：
+2  修改设置方法以初始化S函数的属性。 对于此示例：
 
 - 将运行时对象的NumInputPorts和NumOutputPorts属性设置为1，以初始化一个输入端口和一个输出端口。
 - 调用运行时对象的*SetPreCompInpPortInfoToDynamic*和*SetPreCompOutPortInfoToDynamic*方法，以指示输入和输出端口从模型继承其已编译属性（尺寸，数据类型，复杂度和采样模式）。
@@ -148,7 +148,7 @@ block.RegBlockMethod('Update',              @Update);
 
 如果您的S函数需要连续状态，请使用运行时对象的NumContStates属性在设置方法中初始化连续状态的数量。 不要在设置方法中初始化离散状态。
 
-3. 在PostPropagationSetup方法中初始化离散状态。  2级MATLAB S函数将离散状态信息存储在DWork向量中。 在此示例中，模板文件中的默认PostPropagationSetup方法就足够了。
+3  在PostPropagationSetup方法中初始化离散状态。  2级MATLAB S函数将离散状态信息存储在DWork向量中。 在此示例中，模板文件中的默认PostPropagationSetup方法就足够了。
 
    msfcn_unit_delay.m中的以下PostPropagationSetup方法名为DoPostPropSetup，它初始化了一个名为x0的DWork向量
    
@@ -166,7 +166,7 @@ block.RegBlockMethod('Update',              @Update);
 
 如果您的S函数使用其他DWork向量，则也应在PostPropagationSetup方法中对其进行初始化（请参见在Level 2 MATLAB S函数中使用DWork向量）。
 
-4. 在InitializeConditions或Start回调方法中初始化离散和连续状态或其他DWork向量的值。 对于模拟开始时一次初始化的值，请使用Start回调方法。 每当重新启用包含S功能的已启用子系统时，请使用InitializeConditions方法获取需要重新初始化的值。
+4  在InitializeConditions或Start回调方法中初始化离散和连续状态或其他DWork向量的值。 对于模拟开始时一次初始化的值，请使用Start回调方法。 每当重新启用包含S功能的已启用子系统时，请使用InitializeConditions方法获取需要重新初始化的值。
 
     对于此示例，使用InitializeConditions方法将离散状态的初始条件设置为S函数的dialog参数的值。 例如，msfcn_unit_delay.m中的InitializeConditions方法为：
 	
@@ -183,7 +183,7 @@ block.RegBlockMethod('Update',              @Update);
 block.ContStates.Data(1) = 1.0;
 ```
 
-5. 在Outputs回调方法中计算S函数的输出。 对于此示例，将输出设置为DWork向量中存储的离散状态的当前值。
+5  在Outputs回调方法中计算S函数的输出。 对于此示例，将输出设置为DWork向量中存储的离散状态的当前值。
 
     msfcn_unit_delay.m中的Outputs方法为：
 	
@@ -193,7 +193,7 @@ block.ContStates.Data(1) = 1.0;
   block.OutputPort(1).Data = block.Dwork(1).Data;
 ```
 
-6. 对于具有连续状态的S函数，请使用“导数”回调方法计算状态导数。 运行时对象将派生数据存储在其“派生”属性中。 例如，以下行将第一状态导数设置为等于第一输入信号的值。
+6  对于具有连续状态的S函数，请使用“导数”回调方法计算状态导数。 运行时对象将派生数据存储在其“派生”属性中。 例如，以下行将第一状态导数设置为等于第一输入信号的值。
 
 ``` lsl
 block.Derivatives.Data(1) = block.InputPort(1).Data;
@@ -201,7 +201,7 @@ block.Derivatives.Data(1) = block.InputPort(1).Data;
 
 本示例不使用连续状态，因此不实现“派生”回调方法。
 
-7. 在Update回调方法中更新所有离散状态。 对于此示例，将离散状态的值设置为第一输入信号的当前值。
+7  在Update回调方法中更新所有离散状态。 对于此示例，将离散状态的值设置为第一输入信号的当前值。
     msfcn_unit_delay.m中的Update方法是：
 	
 ``` oxygene
@@ -210,7 +210,7 @@ block.Derivatives.Data(1) = block.InputPort(1).Data;
   block.Dwork(1).Data = block.InputPort(1).Data;
 ```
 
-8. 在Terminate方法中执行任何清除操作，例如清除变量或内存。 与C MEX S函数不同，Level-2 MATLAB S函数不需要具有Terminate方法。
+8  在Terminate方法中执行任何清除操作，例如清除变量或内存。 与C MEX S函数不同，Level-2 MATLAB S函数不需要具有Terminate方法。
 
 有关其他回调方法的信息，请参见Level 2 MATLAB S函数回调方法。 有关运行时对象属性的列表，请参见Simulink.MSFcnRunTimeBlock和父类Simulink.RunTimeBlock的参考页。
 
