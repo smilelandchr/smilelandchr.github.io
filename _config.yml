@@ -8,10 +8,13 @@ keyword: "matlab, simulink, python, 小波分析， 傅里叶"
 url: "http://smilelandchr.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/smilelandchr/smilelandchr.github.io.git" # you code repository
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-# Publish posts or collection documents with a future date.
-future: true
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Goals determine what you going to be!"
+sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
 
 # SNS settings
 RSS:  false
@@ -21,28 +24,23 @@ github_username:    smilelandchr
 facebook_username:  disheng.chen.12
 jianshu_username:   2dde017535f9
 #twitter_username:   qiubaiying
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
+
 
 
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-# If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN  
 
 
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-# make sure you have this gem installed
-# `$ gem install jekyll-paginate`
-plugins: [jekyll-paginate]
+gems: [jekyll-paginate]
+
 
 
 
@@ -51,18 +49,14 @@ plugins: [jekyll-paginate]
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-  syntax_highlighter_opts:
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
 
 
 
-# Disqus settings
+# 评论系统
+# Disqus（https://disqus.com/）
 # disqus_username: smileland
 
 # Gitalk
@@ -75,31 +69,24 @@ gitalk:
   admin: smilelandchr
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
-# Netease settings
-netease_comment: false
 
-
+# 统计
 
 # Analytics settings
-# Baidu Analytics 
+# Baidu Analytics
 ba_track_id: b917d4dc1bf95a7b39a9e57370730145
 
 # Google Analytics
 ga_track_id: 'UA-141215876-1'            # Format: UA-xxxxxx-xx
-ga_domain: blog.smileland.me
+ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar:  /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
 
 
 
@@ -109,44 +96,13 @@ service-worker: true
 
 
 
-# MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: true
-
-
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-        title: "乱序",
-        href: "http://mida.re/"
+        title: "WY",
+        href: "http://zhengwuyang.com"
     },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "David's Game",
-        href: "https://www.ruoyaowu.com/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
+        title: "简书·BY",
+        href: "http://www.jianshu.com/u/e71990ada2fd"
     }
 ]
