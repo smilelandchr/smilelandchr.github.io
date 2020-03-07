@@ -1,24 +1,25 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
-header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "https://huangxuan.me"              # your host, for absolute URL
+title: SMILELAND BLOG
+SEOTitle: 月白的博客 | SMILELAND
+header-img: img/post-bg-desk.jpg
+email: smileland@smileland.me
+description: "Every failure is leading towards success."
+Designer | 这里是 @SMILELAND 的个人博客，与你一起发现更大的世界。"
+keyword: "matlab, simulink, python, 小波分析， 傅里叶"
+url: "http://smilelandchr.github.io"          # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true
 
 # SNS settings
-RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-twitter_username:   huxpro
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
+RSS:  false
+weibo_username:     smileland_chr
+#zhihu_username:     qiubaiying
+github_username:    smilelandchr
+facebook_username:  disheng.chen.12
+jianshu_username:   2dde017535f9
+#twitter_username:   qiubaiying
 
 
 
@@ -59,7 +60,17 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: hux
+#disqus_username: smileland
+
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: 429771fe09586c8ac848                            #生成的clientID
+  clientSecret: a1df7d7125140b44e308e824061428cf2fbae7ab    #生成的clientSecret
+  repo: smilelandchr.github.io    #仓库名称
+  owner: smilelandchr    #github用户名
+  admin: smilelandchr
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 # Netease settings
 netease_comment: false
@@ -68,18 +79,18 @@ netease_comment: false
 
 # Analytics settings
 # Baidu Analytics 
-# ba_track_id: [your track id]
+ba_track_id: b917d4dc1bf95a7b39a9e57370730145
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id: 'UA-141215876-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "For the next quantum leap<br>离开世界之前，一切都是过程"
-sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "Goals determine what you going to be!"
+sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -96,44 +107,17 @@ service-worker: true
 
 
 # MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
+page-mathjax: true
 
 
 
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-        title: "乱序",
-        href: "http://mida.re/"
+        title: "WY",
+        href: "http://zhengwuyang.com"
     },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "David's Game",
-        href: "https://www.ruoyaowu.com/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
+        title: "简书·BY",
+        href: "http://www.jianshu.com/u/e71990ada2fd"
     }
 ]
