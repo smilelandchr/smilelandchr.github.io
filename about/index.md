@@ -8,36 +8,25 @@ Welcome ;)
 
 ABOUT
 
-* Me: [HUST](http://www.hust.edu.cn/)er / [SJTU Department of Computer Science and Engineering](http://www.cs.sjtu.edu.cn/index.aspx) + [PKU-VCL](http://vcl.idm.pku.edu.cn/) Phd Student(2nd year)
-* Blog: Set up in Dec. 2016, recording something in my personal life, study and work;
+* Me: [NEU](http://neu.edu.cn/)er +  Phd Student(5nd year)
+* Blog: Set up in Dec. 2019, recording something in my personal life, study and work;
 
-* Location: Wuhan/Shanghai/Beijing;
-* Girlfriend: Gloria;
-* Pet: Xiao Qi (a cat).
+* Location: Shenyang;
+* Wife: Lulu;
 
 ---
 
-博客建站于2016年末，主要记录生活、学习和工作中的琐事。
+博客建站于2019年末，主要记录生活、学习和工作中的琐事。
 
-辗转于武汉，上海，北京。
+人在沈阳。
 
-与通过博客结识的女朋友Gloria热恋中。
+已与Lulu结婚6年，有宝宝玲珑一枚。
 
-领养了一只名叫「小七」的猫。
-
-挖坑比填坑快，如果发现某个系列笔记或者计划长时间没有更新，一定是因为懒。
-
-如果想更多了解这个博客，推荐从[这篇文章](https://leohope.com/%E5%86%99%E9%9A%8F%E7%AC%94/2019/08/28/blog-1000/)开始探索。
-
-
+在这里记录一些学习生活的琐事，作为以后的见证，继续加油。
 
 如无特别说明，本站所有文章均采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可，转载请注明出处。
 
-因作者才疏学浅，站内技术类文章可能存在错误，内容或方法仅供参考。站内评论系统由[Livere](https://livere.com/)平台提供，作者回复后，平台不会提醒评论者，建议急需回复的问题直接发邮件，一般会在一天内回复。
-
-Email :  luhp9696 [AT] gmail [DOT] com
-
-
+本博客模板Fork自[Hope](https://leohope.com/about/)，目前还在继续捣腾中。
 
 ---
 
