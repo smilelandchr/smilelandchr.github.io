@@ -4,9 +4,9 @@
 # ---------------------------------------------------------------
 
 # Site
-title: Hope
-subtitle: 此刻珍惜，未来可期
-description: 靡不有初，鲜克有终。
+title: SMILELAND
+subtitle: 善始者实繁，克终者盖寡。
+description: Thinking can do nothing, but action will !!!
 author: Lhp
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: en
@@ -213,9 +213,8 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  Zhihu: https://www.zhihu.com/people/lu-hao-peng-26/activities
-  GitHub: https://github.com/HusterHope
-  Email: mailto:luhp9696@gmail.com
+  GitHub: https://github.com/smilelandchr
+  Email: smileland:smileland@smileland.me
 
 # Social Links Icons
 # Icon Mapping:
@@ -399,14 +398,15 @@ han: false
 # Duoshuo ShortName
 #duoshuo_shortname:
 
-# Disqus
-disqus:
-  enable: false
-  shortname: HusterHope
-  count: true
-  # hide comments (visitors need to click to load the comments)
-  # count need to be false when hide is true
-  hide: false
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: 429771fe09586c8ac848                            #生成的clientID
+  clientSecret: a1df7d7125140b44e308e824061428cf2fbae7ab    #生成的clientSecret
+  repo: smilelandchr.github.io    #仓库名称
+  owner: smilelandchr    #github用户名
+  admin: smilelandchr
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 # Hypercomments
 #hypercomments_id:
@@ -426,7 +426,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC8zMjE2MC84NzI0
+# livere_uid: MTAyMC8zMjE2MC84NzI0
 
 # Baidu Share
 # Available value:
@@ -447,8 +447,13 @@ jiathis: false
 # See: https://www.google.com/webmasters/
 #google_site_verification:
 
+# Analytics settings
+# Baidu Analytics 
+ba_track_id: b917d4dc1bf95a7b39a9e57370730145
+
 # Google Analytics
-google_analytics: UA-106640590-1
+ga_track_id: 'UA-141215876-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -464,10 +469,10 @@ google_analytics: UA-106640590-1
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
+# duoshuo_info:
+#  ua_enable: true
+#  admin_enable: false
+#  user_id: 0
   #admin_nickname: Author
 
 
