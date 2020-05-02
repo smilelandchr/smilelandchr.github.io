@@ -398,15 +398,7 @@ han: false
 # Duoshuo ShortName
 #duoshuo_shortname:
 
-<!-- Gitalk 评论 start  -->
-
-<!-- Link Gitalk 的支持文件  -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
-<div id="gitalk-container"></div>     <script type="text/javascript">
-    var gitalk = new Gitalk({
-
-    // gitalk的主要参数
+# Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: 429771fe09586c8ac848                            #生成的clientID
@@ -415,20 +407,6 @@ gitalk:
   owner: smilelandchr    #github用户名
   admin: smilelandchr
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
-    });
-    gitalk.render('gitalk-container');
-</script> 
-<!-- Gitalk end -->
-
-# Gitalk
-#gitalk:
-#  enable: true    #是否开启Gitalk评论
-#  clientID: 429771fe09586c8ac848                            #生成的clientID
-#  clientSecret: a1df7d7125140b44e308e824061428cf2fbae7ab    #生成的clientSecret
-#  repo: smilelandchr.github.io    #仓库名称
-#  owner: smilelandchr    #github用户名
-#  admin: smilelandchr
-#  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 # Hypercomments
 #hypercomments_id:
