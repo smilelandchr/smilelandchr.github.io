@@ -400,7 +400,7 @@ han: false
 
 # Gitalk
 gitalk:
-  enable: true    #是否开启Gitalk评论
+  enable: false    #是否开启Gitalk评论
   clientID: 429771fe09586c8ac848                            #生成的clientID
   clientSecret: a1df7d7125140b44e308e824061428cf2fbae7ab    #生成的clientSecret
   repo: smilelandchr.github.io    #仓库名称
@@ -426,7 +426,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-# livere_uid: MTAyMC8zMjE2MC84NzI0
+livere_uid: MTAyMC80OTk1OS8yNjQ1MA==
 
 # Baidu Share
 # Available value:
